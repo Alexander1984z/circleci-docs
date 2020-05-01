@@ -6,7 +6,9 @@
   "scripts": {
     "webpack-dev": "webpack -p",
     "webpack-prod": "NODE_ENV=production webpack -p",
-    "webpack-watch": "webpack -p --watch"
+    "webpack-watch": "webpack -p --watch",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,8 @@
   "dependencies": {
     "js-cookie": "^2.2.0",
     "lodash.debounce": "^4.0.8",
-    "lodash.get": "^4.4.2"
+    "lodash.get": "^4.4.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
@@ -25,5 +28,6 @@
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0"
-  }
+  },
+  "snyk": true
 }
