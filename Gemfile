@@ -6,7 +6,7 @@ gem 'jekyll', "3.8.4"
 gem 'html-proofer', "3.9.1"
 gem 'jekyll-sitemap'
 
-gem 'jekyll-assets'
+gem 'jekyll-assets', '>= 3.0.11'
 # jekyll-assets depends on sprockets, which depends on rack, which has two
 # security vulnerabilities prior to 2.0.6.
 # https://nvd.nist.gov/vuln/detail/CVE-2018-16471
